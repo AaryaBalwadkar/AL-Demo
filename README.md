@@ -1,4 +1,4 @@
-# AccrediLink
+![Lottie Animation](assets/AccrediLink.gif)
 
 ## Project Structure
 
@@ -24,19 +24,28 @@ Ensure you have the following installed on your machine:
 
 ### Installation
 
+#### Environment Variables
+Inside your server folder make a .env file and add those entries:
+```bash
+   PORT = 
+   ACCESS_TOKEN_SECRET = 
+   REFRESH_TOKEN_SECRET = 
+   DATABASE_URL = 
+```
+
 1. Clone the repository:
    ```bash
    git clone https://github.com/AaryaBalwadkar/AL-Demo.git
    cd AL-Demo
 
 2. Install dependencies for both the client and server folders.
-   <br>*Installing Client Dependencies*
+   <br>***Installing Client Dependencies***
    ```bash
    cd client
    npm install
    ```
 
-   *Installing Server Dependencies*
+   ***Installing Server Dependencies***
    ```bash
    cd ../server
    npm install
@@ -44,7 +53,7 @@ Ensure you have the following installed on your machine:
 
 ### Running the Application
 
-*Starting the Client*
+***Starting the Client***
 1. Navigate to the client folder:
    ```bash
    cd client
@@ -55,7 +64,7 @@ Ensure you have the following installed on your machine:
 
 3. The frontend will run on http://localhost:5173 (default Vite port).
 
-<br>*Starting the Server*
+<br>***Starting the Server***
 1. Navigate to the server folder:
    ```bash
    cd server
@@ -64,27 +73,5 @@ Ensure you have the following installed on your machine:
    ```bash
    npm run dev
 
-3. The frontend will run on http://localhost:5173 (default Vite port).
-   
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/AaryaBalwadkar/AL-Demo.git
-   cd AL-Demo
+3. The backend will run on your configured port mentioned in .env.
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/AaryaBalwadkar/AL-Demo.git
-   cd AL-Demo
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/AaryaBalwadkar/AL-Demo.git
-   cd AL-Demo
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/AaryaBalwadkar/AL-Demo.git
-   cd AL-Demo
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/AaryaBalwadkar/AL-Demo.git
-   cd AL-Demo
