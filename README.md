@@ -1,4 +1,4 @@
-![Lottie Animation](assets/AccrediLink.gif)
+![](assests/AccrediLink.gif)
 
 ## Project Structure
 
