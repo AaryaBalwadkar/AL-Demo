@@ -6,6 +6,8 @@ import { PrismaClient } from '@prisma/client';
 import cookieParser from 'cookie-parser';
 import createError from 'http-errors'
 import morgan from 'morgan'
+import path from 'path';
+import certificateroutes from '../routes/certificateroutes';
 
 dotenv.config({})
 
@@ -17,6 +19,8 @@ app.use(cors({ origin: "http://localhost:5173", credentials: true }))
 app.use(express.json())
 app.use(morgan('dev'))
 app.use(cookieParser())
+app.use('/certificates', express.static(path.join(__dirname, '../../assets/certificates')));
+app.use('/api/certificates', certificateroutes);
 
 app.get('/', (req: Request, res: Response) => {
   console.log(req.headers['authorization'])
