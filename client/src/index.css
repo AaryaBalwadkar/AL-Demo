@@ -1,5 +1,6 @@
+@import "tailwindcss";
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif, ;
   line-height: 1.5;
   font-weight: 400;
 
@@ -65,4 +66,14 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+@font-face {
+  font-family: "Sansation";
+  src: url("./assets/fonts/Sansation_Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.font-sansation {
+  font-family: "Sansation", sans-serif;
 }
